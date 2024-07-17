@@ -12,8 +12,8 @@ router
 router
 .route('/:id')
 .get(tasksController.getTask)
-.get(tasksController.updateTask)
-.get(tasksController.deleteTask)
-.get(tasksController.taskDone);
+.put(tasksController.updateTask)
+.delete(tasksController.deleteTask)
+.patch(tasksController.taskDone);
 
 export default router;
