@@ -40,7 +40,7 @@ async function createTask(req, res){
 };
 
 async function getTask(req, res){
-    const { id } = req.body;
+    const { id } = req.params;
     const {userId} = req.user;
     try {
     const task = await Task.findOne({
